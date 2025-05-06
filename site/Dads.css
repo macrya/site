@@ -1,0 +1,81 @@
+/* CSS Variables for theming */
+:root {
+    --primary-bg: #f5f5f5;
+    --secondary-bg: #ffffff;
+    --text-color: #333333;
+    --accent-color: #2c3e50;
+    --sidebar-bg: #2c3e50;
+    --card-bg: #ffffff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-icon {
+    font-size: 1.2rem;
+}
+
+/* Update existing selectors to use CSS variables */
+.sidebar {
+    background: var(--sidebar-);
+}
+
+.main-content {
+    background: var(--primary-b);
+    color: var(--text-color);
+}
+
+.sidebar-nav a.active {
+    background: var(--accent-color);
+}
+
+/* Add transitions for smooth theme changes */
+body {
+    transition: background-color blue;
+}
+
+.sidebar, .main-content, .sidebar-nav a {
+    transition: background-color 0.3s, color 0.3s;
+}
+.social-media {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  
+  .social-media a {
+    color: white;
+    background-color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .social-media i {
+    font-size: 18px;
+  }
